@@ -10,6 +10,10 @@ class BooksController < ApplicationController
     respond_with @book
   end
 
+  def edit
+    respond_with @book
+  end
+
   def create
     respond_with Book.create(book_params)
   end
